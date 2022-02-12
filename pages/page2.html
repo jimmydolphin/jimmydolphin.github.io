@@ -1,0 +1,51 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><meta name=spm_prefix content=333.30><title>哔哩哔哩</title><link href=//s1.hdslb.com/bfs/static/ios-download/static/css/app.ce2294d1c68dac7db16765c8eb23cdc0.css rel=stylesheet></head><body><script>function getQueryString(name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)');
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+          return unescape(r[2])
+        }
+        return null
+      }
+
+      function judgeGuide() {
+        var ua = navigator.userAgent
+        var isQQ = (/QQ\/([\d\.]+)/i).test(ua)
+        var isWx = (/MicroMessenger/i).test(ua)
+        var isWeibo = (/Weibo/i).test(ua)
+        return isQQ || isWx || isWeibo
+      }
+
+      function judgeHD() {
+        var u = navigator.userAgent
+        var foldPhone = new RegExp([
+          'TAH-AN00', 'TAH-N0J', // 华为Mate X
+          'TAH-AN00M', 'TAH-N29m', // 华为Mate Xs
+          'TET-AN00', 'TET-AN10', // 华为Mate X2
+          'SM-F900', // Galaxy Fold
+          'SM-F916', // Galaxy Fold 2
+          'SM-F926', // Galaxy Fold 3
+          'M2011J18C' // 小米 Mix Fold
+        ].join('|'))
+
+        var TABLET_SIZE_THRESHOLD = 500
+        var width = window.screen.availWidth || window.innerWidth
+        var height = window.screen.availHeight || window.innerHeight
+        var minSize = Math.min(width, height)
+        return minSize >= TABLET_SIZE_THRESHOLD && !foldPhone.test(u)
+      }
+
+      if (judgeGuide() && getQueryString('schema')) {
+        document.querySelector('meta[name=spm_prefix]').setAttribute('content', '333.917')
+      }
+
+      window.isHD = judgeHD()
+
+      window.reportMsgObj = {}
+      window.reportConfig = {
+        msgObjects: 'reportMsgObj',
+        supportH5: true,
+        heatMap: false,
+        pvMsg: {
+          device_type: window.isHD ? 'pad' : 'phone'
+        }
+      }</script><script src=https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js></script><div id=app></div><script type=text/javascript src=https://s1.hdslb.com/bfs/static/ios-download/static/js/manifest.950279f155e0c4b41e35.js></script><script type=text/javascript src=https://s1.hdslb.com/bfs/static/ios-download/static/js/vendor.4b67bb3367a86d42b45c.js></script><script type=text/javascript src=https://s1.hdslb.com/bfs/static/ios-download/static/ios-download/static/js/app.4d679a44195c816776b1.js></script></body></html>
