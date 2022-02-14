@@ -1,0 +1,50 @@
+/* CSS Document */
+
+body {font-family:Helvetica, Verdana, Arial, sans-serif; margin-top:0px; padding-top:0px;}
+h1 {color:#264273; font-size:180%; font-weight:normal; margin-bottom:0px; padding-bottom:0px; }
+h2 {color:#264273; font-size:120%; font-weight:normal}
+h3 {color:#264273; font-size:100%; font-weight:normal}
+p {font-size:90%; }
+#container { width:824px; padding-left:0px; padding-top:0px; margin-top:0px; height: auto; margin-left: auto; margin-right: auto; padding-right:0px; padding-bottom:0px; margin-bottom:0px;}
+#bordered {background:url(/web/20060821230823im_/http://info.cern.ch/images/contour.gif) top left repeat-y; padding-left:12px; padding-right:12px; position:relative; width:800px; padding-bottom:0px; margin-bottom:0px;}
+#topbanner {width:800px; height:76px; padding-bottom:0px; margin-bottom:0px; padding-left:0px; margin-left:0px;}
+#content {width:776px; padding-left:12px; padding-right:12px; padding-top:24px; padding-bottom:24px; margin-top:0px; position:relative}
+#title {display:block; width:776px;}
+#intro { width:600px; position:relative; left:176px; background:url(/web/20060821230823im_/http://info.cern.ch/images/twopoints.gif) bottom left repeat-x; padding-bottom:12px;}
+.photos {width:244px; padding-top:12px }
+.caption {font-size:80%; padding-right:12px; color:#264273; line-height:1.2em}
+.text { width:418px; float:right; padding-right:24px; padding-left:60px; padding-top:12px; padding-bottom:12px; background:url(/web/20060821230823im_/http://info.cern.ch/images/pointsltr.gif) top left repeat-y; line-height:1.2em}
+#bottom {width:800px; padding-left:0px; padding-top:0px; margin-top:0px; padding-bottom:12px; margin-left: 0px; margin-right: auto;}
+a:link {color:#264273; text-decoration:underline}
+a:visited {color:#800080; text-decoration:underline}
+a:hover {color:#264273; text-decoration:none}
+a:active  {color:#264273; text-decoration:underline}
+#footer {
+width:800px;
+padding-top:6px;
+padding-left:12px;
+text-align:left;
+font-size:x-small;
+color:#333333}
+.emph {color:#264273;}
+/*
+     FILE ARCHIVED ON 23:08:23 Aug 21, 2006 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:34:08 Feb 14, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 168.428
+  exclusion.robots: 0.094
+  exclusion.robots.policy: 0.086
+  RedisCDXSource: 6.02
+  esindex: 0.008
+  LoadShardBlock: 142.511 (3)
+  PetaboxLoader3.datanode: 136.217 (4)
+  CDXLines.iter: 17.363 (3)
+  load_resource: 89.904
+  PetaboxLoader3.resolve: 44.834
+*/
